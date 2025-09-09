@@ -1,0 +1,14 @@
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <div class="logo">Leo9 Clone</div>
+  
+  <ul class="nav-links" [class.active]="menuOpen">
+    <li><a href="#home" [class.active]="activeSection === 'home'" (click)="scrollTo('home')"><h1>home</h1></a></li>
+    <li><a href="#services" [class.active]="activeSection === 'services'" (click)="scrollTo('services')"><h1>Services</h1></a></li>
+    <li><a href="#work" [class.active]="activeSection === 'work'" (click)="scrollTo('work')"><h1>Work</h1></a></li>
+    <li><a href="#about" [class.active]="activeSection === 'about'" (click)="scrollTo('about')"><h1>About</h1></a></li>
+  </ul>
+
+  <button class="cta-btn" (click)="scrollTo('contact')">Contact Us</button>
+
+  <div class="menu-toggle" (click)="toggleMenu()">☰</div>
+</nav>
